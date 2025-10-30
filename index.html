@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Everything</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="cherry-blossoms" id="cherryBlossoms"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">To My Everything, <span class="highlight">[Girlfriend's Name]</span></h1>
+            <p class="hero-subtitle">A small gift to celebrate the wonderful person you are.</p>
+            <button class="cta-button" onclick="scrollToSection('story')">
+                Discover Your Surprise
+                <i class="fas fa-heart"></i>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Journey Together</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in" data-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop" alt="The Day We Met">
+                        </div>
+                        <h3>The Day We Met</h3>
+                        <p>Where it all began. The moment that changed everything.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in" data-delay="400">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=300&fit=crop" alt="Our First Adventure">
+                        </div>
+                        <h3>Our First Adventure</h3>
+                        <p>That unforgettable trip where we created memories to last a lifetime.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in" data-delay="600">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=400&h=300&fit=crop" alt="Special Moment">
+                        </div>
+                        <h3>A Special Moment</h3>
+                        <p>One of the many beautiful days that made my heart overflow with love.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in" data-delay="800">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&h=300&fit=crop" alt="Today">
+                        </div>
+                        <h3>Today</h3>
+                        <p>My love for you has only grown stronger with each passing day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section class="letter-section" id="letter">
+        <div class="container">
+            <div class="letter-container fade-in">
+                <h2 class="section-title">A Letter From My Heart</h2>
+                <div class="letter-content">
+                    <p class="letter-greeting">My dearest <span class="highlight">[Girlfriend's Name]</span>,</p>
+                    <p>From the moment you walked into my life, you turned it into a beautiful adventure. Every day with you feels like a dream. Your smile is my sun, and your laughter is my favorite song.</p>
+                    <p>Thank you for being you – for your kindness, your warmth, and the endless joy you bring to my world. You make everything brighter, and I am so grateful for every moment we share together.</p>
+                    <p>I love you more than words can say. Happy <span class="highlight">[Birthday/Anniversary]</span>!</p>
+                    <p class="letter-signature">Yours always,<br><span class="highlight">[Boyfriend's Name]</span></p>
+                </div>
+                <div class="letter-decoration">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in">A Gallery of Our Moments</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" data-delay="100" onclick="openLightbox(0)">
+                    <img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=600&h=600&fit=crop" alt="Memory 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-delay="200" onclick="openLightbox(1)">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=600&fit=crop" alt="Memory 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-delay="300" onclick="openLightbox(2)">
+                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=600&fit=crop" alt="Memory 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-delay="400" onclick="openLightbox(3)">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=600&fit=crop" alt="Memory 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-delay="500" onclick="openLightbox(4)">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&h=600&fit=crop" alt="Memory 5">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-delay="600" onclick="openLightbox(5)">
+                    <img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=600&h=600&fit=crop&sat=-100" alt="Memory 6">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-delay="700" onclick="openLightbox(6)">
+                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=600&fit=crop&sat=-100" alt="Memory 7">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in" data-delay="800" onclick="openLightbox(7)">
+                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=600&fit=crop&sat=-100" alt="Memory 8">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <img id="lightboxImage" src="" alt="Gallery Image">
+    </div>
+
+    <!-- Final Surprise Section -->
+    <section class="surprise-section" id="surprise">
+        <div class="container">
+            <h2 class="section-title fade-in">One More Surprise...</h2>
+            <div class="video-container fade-in">
+                <iframe width="100%" height="100%" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="Our Song" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="final-message fade-in">
+                <p>I can't wait to create more beautiful memories with you.</p>
+                <p class="signature">Yours always,<br><span class="highlight">[Boyfriend's Name]</span></p>
+                <div class="hearts">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with <i class="fas fa-heart"></i> for you</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
